@@ -1,12 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+//* ------------profile-----------*//
+import Profile from "./components/task_1/Profile/Profile";
+import user from "./components/task_1/user.json";
+//* ------------statistic-----------*//
+import Statistic from "./components/task_2/StatList/Statistic";
+import statisticsInfo from "./components/task_2/statistical-data.json";
+//* ------------friendLsit-----------*//
+import FriendList from "./components/task_3/FriendList/FriendList";
+import friendsInfo from "./components/task_3/friendList.json";
+//* ------------transactions-----------*//
+import TransList from "./components/task_4/TransList/TransList";
+import transactionsInfo from "./components/task_4/transaction.json";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const App = () => (
+  <>
+    <Profile user={user} />
+    <Statistic stats={statisticsInfo} />
+    <FriendList friends={friendsInfo} />
+    <TransList transactions={transactionsInfo} />
+  </>
+);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<App />, document.getElementById("root"));

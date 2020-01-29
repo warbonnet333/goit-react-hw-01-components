@@ -1,0 +1,10 @@
+.friendList{
+  margin: 0 auto;
+  width: 50%;
+  list-style: none;
+  text-align: center;
+}
+
+.avatar{
+  height: 48px;
+}

@@ -1,0 +1,17 @@
+.trow{
+  height: 40px;
+  text-align: center;
+  color: grey;
+}
+
+.trow:nth-of-type(even){
+  background-color: lightgrey;
+}
+
+.trow td:nth-child(1){
+  text-transform: capitalize;
+  text-align: start;
+  padding-left: 80px;
+}
+
+

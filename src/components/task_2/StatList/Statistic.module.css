@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.statistics {
+  width: 270px;
+  height: 130px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+}
+
+.title {
+  flex-basis: 50%;
+  text-transform: uppercase;
+  color: #475965;
+  font-size: 17px;
+  height: 100%;
+  padding: 20px;
+}
+
+.statList {
+  flex-basis: 50%;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  object-position: bottom;
+}
+
