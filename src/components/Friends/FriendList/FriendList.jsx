@@ -5,12 +5,12 @@ import PropTypes from "prop-types";
 
 const FriendList = ({ friends }) => (
   <ul className={styles.friendList}>
-    {friends.map(item => (
+    {friends.map(({ avatar, name, isOnline, id }) => (
       <FriendListItem
-        avatar={item.avatar}
-        name={item.name}
-        isOnline={item.isOnline}
-        key={item.id}
+        avatar={avatar}
+        name={name}
+        isOnline={isOnline}
+        key={id}
       />
     ))}
   </ul>
