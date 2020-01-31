@@ -14,13 +14,13 @@ const TransList = ({ transactions }) => (
     </thead>
 
     <tbody>
-      {transactions.map(item => (
-          <TransItem
-            key={item.id}
-            type={item.type}
-            amount={item.amount}
-            currency={item.currency}
-          />
+      {transactions.map(({ id, type, amount, currency }) => (
+        <TransItem
+          key={id}
+          type={type}
+          amount={amount}
+          currency={currency}
+        />
       ))}
     </tbody>
   </table>
