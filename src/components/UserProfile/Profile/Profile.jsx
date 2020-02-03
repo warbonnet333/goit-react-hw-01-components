@@ -1,7 +1,7 @@
 import React from "react";
 import { Stat } from "../Stat/Stat";
 import styles from "./Profile.module.css";
-const shortid = require('shortid');
+const uuidv4 = require('uuid/v4');
 
 const Profile = ({ name, tag, location, avatar, stats }) => (
   <div className={styles.profile}>
@@ -14,7 +14,7 @@ const Profile = ({ name, tag, location, avatar, stats }) => (
     <ul className="stats">
       {
         Object.keys(stats).map(item =>
-          <Stat label={item} quantity={stats[item]} key={shortid.generate()} />
+          <Stat label={item} quantity={stats[item]} key={uuidv4()} />
         )
       }
     </ul>
